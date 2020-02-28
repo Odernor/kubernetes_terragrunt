@@ -28,6 +28,6 @@ inputs = {
   
   # kubernetes nodes
   kubernetes_node_server_type = "cx11"
-  kubernetes_node_count = 1
+  kubernetes_node_count = 2
 
 }
