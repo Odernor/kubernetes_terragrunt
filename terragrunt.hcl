@@ -21,13 +21,26 @@ inputs = {
   # random token. Format: [a-z0-9]{6}\.[a-z0-9]{16} or use: kubeadm token generate
   kubernetes_token = "1yl44y.g0t8eqio706q08pp"
 
-  # kubernetes master
+  # kubernetes
   kubernetes_image = "ubuntu-18.04"
+  kube_config = "~/.kube/config_hetzner"
+
+  # kubernetes master
   kubernetes_master_server_type = "cx11"
   kubernetes_master_internal_ip = "10.0.1.2"
   
   # kubernetes nodes
   kubernetes_node_server_type = "cx11"
   kubernetes_node_count = 2
+
+  # Certmanager
+  certmanagerNamespace = "cert-manager"
+  email_address = "mail@dabetz.de"
+  cert-manager-crd = "https://raw.githubusercontent.com/jetstack/cert-manager/release-0.12/deploy/manifests/00-crds.yaml"
+
+  # Ingress
+  ingressNamespace = "nginx-ingress"
+  ingressReplicas = 3
+  
 
 }
