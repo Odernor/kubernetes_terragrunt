@@ -17,7 +17,7 @@ inputs = {
   jumphost_internal_ip = "10.0.1.1"
 
   # kubernetes
-  kubernetes_version = "v1.17.3"
+  kubernetes_version = "v1.18.2"
   # random token. Format: [a-z0-9]{6}\.[a-z0-9]{16} or use: kubeadm token generate
   kubernetes_token = "1yl44y.g0t8eqio706q08pp"
 
