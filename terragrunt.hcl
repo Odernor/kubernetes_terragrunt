@@ -27,7 +27,7 @@ inputs = {
 
   # kubernetes master
   kubernetes_master_server_type = "cx11"
-  kubernetes_master_internal_ip = "10.0.1.2"
+  kubernetes_master_internal_ip = "10.0.1.100"
   
   # kubernetes nodes
   kubernetes_node_server_type = "cx11"
